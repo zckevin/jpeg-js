@@ -3,5 +3,7 @@ var encode = require('./lib/encoder'),
 
 module.exports = {
   encode: encode,
-  decode: decode
+  decode: decode.decode,
+  writeDataToImage: decode.writeDataToImage,
+  getImageComponents: decode.getImageComponents,
 };
